@@ -2,3 +2,6 @@
 /SnakeGame.Core/obj/Debug
 /SnakeGame.Main/obj/Debug
 /SnakeGame.Main/bin/Debug
+/SnakeGame.Core/bin/Debug/SnakeGame.Core.pdb
+/SnakeGame.Core/bin/Debug/SnakeGame.Core.dll
+/.vs/SnakeGame/v14/.suo

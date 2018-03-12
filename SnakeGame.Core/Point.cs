@@ -2,6 +2,7 @@
 
 namespace SnakeGame.Core
 {
+    //TODO: Maybe just use a struct?
     public class Point : ICloneable
     {
         public int X { get; set; }

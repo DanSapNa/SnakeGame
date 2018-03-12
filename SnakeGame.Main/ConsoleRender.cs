@@ -5,6 +5,11 @@ using System.Linq;
 
 namespace SnakeGame.Main
 {
+    //TODO: The idea of dividing the project to functionality itself and then rendering itself is good,
+    //but removes part of OOP from the project.
+    //If you want to separate rendering, it's better to place rendering of objects using the renderer interface 
+    //in the correspondant classes, and then pass the actual implementation of renderer
+    //during game initialization.
     public class ConsoleRender
     {
         public int WindowHeigth { get; }
@@ -33,6 +38,7 @@ namespace SnakeGame.Main
             DisplayBorder();
         }
 
+        //TODO: There was a requirement to implement different food using polimorphism principle.
         public void DisplayItem(Point item)
         {
             Console.SetCursorPosition(item.X, item.Y);
