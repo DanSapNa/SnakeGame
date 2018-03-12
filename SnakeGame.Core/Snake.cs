@@ -5,15 +5,16 @@ using System.Threading;
 
 namespace SnakeGame.Core
 {
+    //TODO: This class looks like 'Game', because it holds Field, Item and Snake. Should be separated.
     public class Snake
     {
         private List<Point> points = new List<Point>();
         private List<Point> lastPoints = new List<Point>();
-        public Point Item { get; }
+        public Point Item { get; } //TODO: Better to call smth like 'ItemToEat' - not really obvious what this Item is.
 
-        private int xVelocity;
+        private int xVelocity; //TODO: It's not clear for me what is the purpose of xVelocity and yVelocity.
         private int yVelocity;
-        private int xLimit;
+        private int xLimit; //TODO: xLimit and yLimit look like the field size. If so, should be in the 'Field' class and renamed.
         private int yLimit;
         private int length = 6;
         private readonly int extension = 1;

@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace SnakeGame.Main
 {
+    //TODO: The approach is not really OOP-like. Consider using such classes as Game, Snake, Food 
+    //(there is a comment regarding this in Snake.cs file, too.
     public class Program
     {
         private static bool IsRestart = false;
